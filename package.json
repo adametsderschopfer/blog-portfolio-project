@@ -1,0 +1,43 @@
+{
+  "name": "own-portfolio-project",
+  "version": "1.0.0",
+  "description": "own portfolio project",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "dev": "concurrently \"tsc --project ./tsconfig.json --watch\" \"cross-env NODE_ENV=development nodemon dist\"",
+    "test": "tsc --project ./tsconfig.json && ./node_modules/.bin/mocha dist/**/*.spec.js",
+    "lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/**.ts'"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.4",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "jsonwebtoken": "^8.3.0",
+    "lusca": "^1.6.1",
+    "tslint": "^5.11.0",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/cors": "^2.8.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "^4.16.0",
+    "@types/express-session": "^1.15.10",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^12.12.17",
+    "awesome-typescript-loader": "^5.2.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.0.1",
+    "typescript-eslint-parser": "^18.0.0"
+  },
+  "author": "Adamets Vladislav <av.styledev@gmail.com>",
+  "license": "MIT"
+}

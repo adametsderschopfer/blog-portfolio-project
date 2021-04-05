@@ -1,0 +1,1 @@
+{"version":3,"file":"mount.js","sourceRoot":"","sources":["../../src/utils/mount.ts"],"names":[],"mappings":";;;AAEA,MAAa,KAAK;IACV,MAAM,CAAC,IAAI,CAAC,IAAI;QACtB,OAAO,UAAS,UAA0B,EAAE,EAAc;YACzD,IAAI,CAAC,GAAG,CAAC,UAAU,CAAC,CAAC;YACrB,IAAI,EAAE;gBAAE,EAAE,EAAE,CAAC;YAEb,OAAO,IAAI,CAAC;QACb,CAAC,CAAA;IACF,CAAC;CACD;AATD,sBASC"}

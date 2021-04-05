@@ -12,19 +12,33 @@ class Locals {
         dotenv.config({ path: path.join(__dirname, '../../.env') });
         const url = process.env.APP_URL || `http://localhost:${process.env.PORT}`;
         const port = process.env.PORT || 4040;
-        const mongooseUrl = process.env.MONGOOSE_URL;
+        const databaseConnectionOptions = {
+            "type": "mysql",
+            "host": "localhost",
+            "port": 3306,
+            "username": "root",
+            "password": "root",
+            "database": "blog-portfolio",
+            "synchronize": true,
+            "entities": [
+                "dist/entity/*.js"
+            ],
+            "migrations": [
+                "dist/migration/*.js"
+            ]
+        };
         return {
-            mongooseUrl,
             port,
             url,
+            databaseConnectionOptions
         };
     }
     /**
      * Injects your config to the app's locals
      */
     static init(_express) {
-        Log_1.default.info('[Locals] :: locals was init');
-        _express.locals.app = this.config();
+        Log_1.default.info('[Locals] :: Initialized locals and injects to express.locals');
+        _express.locals._config = this.config();
         return _express;
     }
 }

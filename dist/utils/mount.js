@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Mount = void 0;
 class Mount {
-    static init(_app) {
+    init(_app) {
         return function (middleware, cb) {
             _app.use(middleware);
             if (cb)
@@ -11,5 +10,5 @@ class Mount {
         };
     }
 }
-exports.Mount = Mount;
+exports.default = new Mount();
 //# sourceMappingURL=mount.js.map

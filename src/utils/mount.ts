@@ -1,7 +1,8 @@
 import {Application, RequestHandler} from "express";
+import {IMount} from "../interfaces/utils/IMount";
 
-export class Mount {
-	public static init(_app): (middleware: RequestHandler, cb: () => void) => Application {
+class Mount implements IMount {
+	init(_app: Application): (middleware: RequestHandler, cb: () => void) => Application {
 		return function(middleware: RequestHandler, cb: () => void): Application {
 			_app.use(middleware);
 			if (cb) cb();
@@ -10,3 +11,5 @@ export class Mount {
 		}
 	}                                 
 }
+
+export default new Mount();

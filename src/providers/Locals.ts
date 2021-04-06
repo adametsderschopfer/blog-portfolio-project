@@ -13,6 +13,7 @@ class Locals {
 
 		const url = process.env.APP_URL || `http://localhost:${process.env.PORT}`;
 		const port = process.env.PORT || 4040;
+		const apiVersion = process.env.apiVersion;
 
 		const databaseConnectionOptions = {
 			"type": "mysql",
@@ -33,7 +34,8 @@ class Locals {
 		return {
 			port,
 			url,
-			databaseConnectionOptions
+			databaseConnectionOptions,
+			apiVersion
 		};
 	}
 

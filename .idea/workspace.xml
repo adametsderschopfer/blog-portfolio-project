@@ -16,26 +16,44 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b193f62-4b63-471e-a9f1-6ee2f5407004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/utils/IMount.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/About.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Contact.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Home.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Post.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Posts.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/Routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ViewEngine.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api-v1.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/web.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/webAdmin.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layout/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/about.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/contacts.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/main.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/post.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/posts.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/endBody.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/head.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/providers/Database.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/providers/Database.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Database.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/providers/Locals.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Locals.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/providers/Locals.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Locals.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utils/mount.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/utils/mount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utils/mount.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/utils/mount.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/Database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/Database.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/providers/Locals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/Locals.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/mount.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mount.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +77,11 @@
     <property name="ts.external.directory.path" value="C:\Users\user\Desktop\Projects\own-portfolio-project\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Projects\own-portfolio-project\src\controllers" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617655329652</updated>
-      <workItem from="1617655333266" duration="7766000" />
+      <workItem from="1617655333266" duration="12331000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init project">
       <created>1617661101020</created>
@@ -76,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617661101020</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feet: add database locals, setting database connection">
+      <created>1617663193224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617663193224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,7 +117,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -95,13 +137,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: init project" />
+    <MESSAGE value="feet: add database locals, setting database connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="feet: add database locals, setting database connection" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="750" y="359" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617661646380">
+    <state x="750" y="359" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617743290789">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="750" y="359" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1617661646380" />
+    <state x="750" y="359" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1617743290789" />
     <state width="1900" height="285" key="GridCell.Tab.0.bottom" timestamp="1617656071717">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -122,14 +165,18 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="746" y="258" key="RollbackChangesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1617655950109" />
+    <state x="552" y="288" key="Vcs.Push.Dialog.v2" timestamp="1617663206777">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="288" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1617663206777" />
     <state x="674" y="295" width="572" height="520" key="find.popup" timestamp="1617656270736">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="674" y="295" width="572" height="520" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1617656270736" />
-    <state x="616" y="258" key="run.anything.popup" timestamp="1617662481865">
+    <state x="616" y="258" key="run.anything.popup" timestamp="1617743154633">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1617662481865" />
+    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1617743154633" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1617657680018">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

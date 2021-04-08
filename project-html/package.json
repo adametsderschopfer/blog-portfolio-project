@@ -12,11 +12,6 @@
     "lint-fix": "stylelint --fix scss ./src/**/*.scss",
     "lint-check": "stylelint --syntax scss ./src/**/*.scss"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js}": [
       "eslint --max-warnings=0",

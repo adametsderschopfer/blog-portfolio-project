@@ -1,6 +1,11 @@
 {% extends 'templates/default.twig' %}
 
-{% block title %}О сервисе{% endblock %}
+{% set main = true %}
+{% set aF = true %}
+{% set ACTIVE_PAGE_ID = '3' %}
+
+{% block title %}Обо мне{% endblock %}
+
 {% block page %}
-    {% include 'templates/pages/about.twig' %}
+    {% include 'templates/pages/posts.twig' %}
 {% endblock %}

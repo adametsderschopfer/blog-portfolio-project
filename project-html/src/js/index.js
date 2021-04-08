@@ -17,12 +17,6 @@
   )
 })()
 
-// Scroll top
-;(function () {
-  let scrollTop = legancy.scrollTop()
-  scrollTop.init()
-})()
-
 // SVG
 ;(function () {
   loadScript(

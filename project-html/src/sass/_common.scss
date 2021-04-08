@@ -1,12 +1,16 @@
 html {
   box-sizing: border-box;
   height: 100%;
+
+  background-color: map-get($basic, primary);
+  color: #ffffff;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit !important;
+  user-select: none;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
   font-family: sans-serif;
   font-size: 15px;
   overflow-x: hidden;
-
+  font-family: 'Ubuntu', sans-serif;
   &.no-scroll {
     overflow-y: hidden;
   }
@@ -47,4 +51,5 @@ button {
   min-width: 320px;
   max-width: $container-width;
   margin: auto;
+  padding: 0 2rem;
 }

@@ -30,14 +30,29 @@
         {% include '../template-parts/angle-flower.twig' with { angle: false } %}
 
         <div class="container menu__wrapper">
-                <nav class="menu__nav">
-                    {% for link in links %}
-                        <a class="menu__nav-item {% if ACTIVE_PAGE_ID and link.id == ACTIVE_PAGE_ID %}active" href="javascript:void(0)"{% else %}" href="{{ link.to }}" {% endif %}>
-                            {% if ACTIVE_PAGE_ID and link.id == ACTIVE_PAGE_ID %}{% include './active-element.twig' %}{% endif %}
-                            {{ link.title }}
-                        </a>
-                    {% endfor %}
-                </nav>
+            <nav class="menu__nav">
+                {% for link in links %}
+                    <a class="menu__nav-item
+                                {% if ACTIVE_PAGE_ID and link.id == ACTIVE_PAGE_ID %}
+                                     active
+                                     {% if NO_DISABLE_LINK %} active-link {% endif %}
+                                {% endif %}"
+                       
+                            {% if ACTIVE_PAGE_ID and link.id == ACTIVE_PAGE_ID %}
+                                {% if NO_DISABLE_LINK %}
+                                    href="{{ link.to }}"
+                                {% else %}
+                                    href="javascript:void(0)"
+                                {% endif %}
+                            {% else %}
+                                href="{{ link.to }}"
+                            {% endif %}
+                    >
+                        {% if ACTIVE_PAGE_ID and link.id == ACTIVE_PAGE_ID %}{% include './active-element.twig' %}{% endif %}
+                        {{ link.title }}
+                    </a>
+                {% endfor %}
+            </nav>
         </div>
 
         {% include '../blocks/menu-button.twig' with {
@@ -49,5 +64,5 @@
                     c7.808,7.81,20.473,7.811,28.284,0C351.398,335.775,351.397,323.112,343.586,315.302z"/>
                     </svg>'
         } %}
-    </div>          
+    </div>
 </div>

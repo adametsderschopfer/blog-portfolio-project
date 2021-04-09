@@ -1,0 +1,120 @@
+{% set posts = [
+    {
+        title: "СТАС ДИКО УГАРЕЛ С Andro-news // ЛУЧШИЙ Xiaomi за $56 с NFC [Стас Комментатор]",
+        description: "
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing el Atque, aut dolore dolorum.
+                    ",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+    {
+        title: "ПЫХ ДЛЯ НОВИЧКА ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut dolore dolorum.",
+        date: "31.01.2021",
+        views: '1 250',
+        link: './post.html'
+    },
+] %}
+
+<div id="posts" class="container">
+    {% include '../blocks/title.twig' with { content: '<svg width="36" class="title-block__svg" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 30C3 31.6569 4.34315 33 6 33H26.1213L33 26.1213V6C33 4.34315 31.6569 3 30 3H6C4.34315 3 3 4.34315 3 6V30ZM6 6H30V22.5H25.5C23.8431 22.5 22.5 23.8431 22.5 25.5V30H6V6ZM25.5 25.5H29.3787L25.5 29.3787V25.5ZM10.5 22.5V25.5H19.5V22.5H10.5ZM10.5 19.5V16.5H25.5V19.5H10.5ZM10.5 10.5V13.5H25.5V10.5H10.5Z" fill="white"/>
+</svg> Записки разработчика' } %}
+
+    <div class="posts__list">
+        {% for post in posts %}
+            <a class="posts__item" href="{{ post.link }}">
+                <div class="posts__item-row">
+                    <div class="posts__item-title">
+                        {{ post.title }}
+                    </div>
+                    <div class="posts__item-dot">•</div>
+                    <div class="posts__item-date">
+                        {{ post.date }}
+                    </div>
+                </div>
+
+                <div class="posts__item-description">
+                    {{ post.description }}
+                </div>
+
+                <div class="posts__item-row posts__item-footer">
+                    <div class="posts__item-views js-space-number">{{ post.views }}</div>
+                </div>
+
+                <hr class="gray">
+            </a>
+        {% endfor %}
+    </div>
+</div>

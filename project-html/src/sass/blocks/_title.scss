@@ -1,0 +1,19 @@
+.title {
+  &__page {
+    margin-bottom: 10px;
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    @include bp-mobile() {
+      font-size: 21px;
+      margin: 0;
+    }
+  }
+}

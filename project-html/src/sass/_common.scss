@@ -46,10 +46,36 @@ button {
   outline: none;
 }
 
-.container {
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+hr {
+  border-bottom: none;
+  border-left: none;
+  border-right-style: solid;
   width: 100%;
-  min-width: 320px;
+  display: block;
+
+  &.light {
+    border-right-color: #ffffff;
+    border-top-width: 2px;
+  }
+
+  &.gray {
+    border-right-color: rgba(255, 255, 255, 0.5);
+    border-top-width: 1px;
+  }
+}
+
+.container {
   max-width: $container-width;
   margin: auto;
   padding: 0 2rem;
+}
+
+.website-workarea {
+  max-width: 100%;
+  width: 100%;
 }

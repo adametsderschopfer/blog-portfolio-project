@@ -9,7 +9,7 @@
 
 .menu {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   display: none;
   overflow: hidden;
   width: 100%;       //0
@@ -148,6 +148,15 @@
     }
   }
 
+  &.disable {
+    &, & * {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    opacity: 0.5;
+  }
+
   &.active {
     &, & * {
       cursor: not-allowed;
@@ -175,7 +184,7 @@
   }
 
   @include bp-mobile()  {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 

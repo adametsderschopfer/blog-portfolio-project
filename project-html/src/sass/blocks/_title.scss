@@ -1,4 +1,39 @@
 .title {
+  &__post {
+    max-width: 690px;
+    text-align: center;
+    margin: 0 auto 15px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+
+    @include bp-mobile() {
+      font-size: 21px;
+      line-height: 31px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+    svg {
+      margin-right: 5px;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0 auto 15px;
+    }
+  }
+
   &__page {
     margin-bottom: 10px;
 
@@ -12,8 +47,9 @@
     justify-content: flex-start;
     
     @include bp-mobile() {
-      font-size: 21px;
+      font-size: 18px;
       margin: 0;
+      line-height: 19px;
     }
   }
 }

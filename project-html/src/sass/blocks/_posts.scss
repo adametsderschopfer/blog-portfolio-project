@@ -26,6 +26,13 @@
   &-row {
     display: flex;
     align-items: center;
+
+    @include bp-tabletXS() {
+      flex-direction: column;
+
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 }
 
@@ -45,6 +52,10 @@
   line-height: 16px;
 
   margin: 0 10px;
+
+  @include bp-tabletXS() {
+    display: none;
+  }
 }
 
 .posts__item-date {
@@ -52,6 +63,10 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
+
+  @include bp-tabletXS() {
+    margin-top: 10px;
+  }
 }
 
 .posts__item-description {

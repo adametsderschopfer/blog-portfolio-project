@@ -22,6 +22,7 @@
     const isActive = !menuPlate.classList.contains('menu__opened')
 
     doAnimationOpen = true
+    document.body.overflow = isActive ? 'hidden' : 'visible';
 
     if (!isActive) {
       menuContent.style.opacity = '0'

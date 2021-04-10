@@ -1,0 +1,11 @@
+{% extends 'templates/default.twig' %}
+
+{% set main = true %}
+{% set aF = true %}
+{% set ACTIVE_PAGE_ID = '1' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block page %}
+    {% include 'templates/pages/index.twig' %}
+{% endblock %}

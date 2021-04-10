@@ -1,0 +1,130 @@
+.posts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 15px 10px 10px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background: map-get($basic, main);
+    box-shadow: inset 2px 0px 5px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    padding-left: 25px;
+
+    cursor: pointer;
+  }
+
+  transition: all 0.3s;
+
+  &-row {
+    display: flex;
+    align-items: center;
+
+    @include bp-tabletXS() {
+      flex-direction: column;
+
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+.posts__item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+}
+
+.posts__item-dot {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin: 0 10px;
+
+  @include bp-tabletXS() {
+    display: none;
+  }
+}
+
+.posts__item-date {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+
+  @include bp-tabletXS() {
+    margin-top: 10px;
+  }
+}
+
+.posts__item-description {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin-top: 10px;
+}
+
+.posts__item-link-to {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.posts__item-views {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.posts__item-footer {
+  margin-top: 30px;
+}
+
+.posts__list {
+  max-height: calc(100vh - 230px );
+
+  overflow-x: hidden; 
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 5px;
+  }
+}

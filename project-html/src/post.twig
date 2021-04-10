@@ -1,0 +1,12 @@
+{% extends 'templates/default.twig' %}
+
+{% set main = true %}
+{% set aF = true %}
+{% set ACTIVE_PAGE_ID = '2' %}
+{% set NO_DISABLE_LINK = true %}
+
+{% block title %}Записки разработчика{% endblock %}
+
+{% block page %}
+    {% include 'templates/pages/post.twig' %}
+{% endblock %}

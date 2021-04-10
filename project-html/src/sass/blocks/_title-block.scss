@@ -1,0 +1,14 @@
+.title-block__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-block__svg {
+  margin-right: 10px;
+
+  @include bp-mobile() {
+    width: 25px;
+    height: 25px;
+  }
+}

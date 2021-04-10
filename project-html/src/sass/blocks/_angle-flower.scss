@@ -1,0 +1,86 @@
+.angle-flower {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+
+  pointer-events: none;
+}
+
+.angle-flower__block {
+  position: absolute;
+
+  .flower {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .triangle {
+    z-index: 3;
+  }
+
+  &-1 {
+    top: 0;
+    left: 0;
+
+    .flower {
+      left: -183px;
+      top: -142px;
+    }
+  }
+
+  &-2 {
+    top: 0;
+    right: 0;
+
+    .flower {
+      top: -209px;
+      right: -159px;
+      transform: scaleX(-1) rotate(130deg);
+    }
+
+    .triangle {
+      transform: rotate(90deg);
+    }
+  }
+
+  &-3 {
+    bottom: 0;
+    left: 0;
+
+    .flower {
+      transform: rotate(103deg);
+      left: -130px;
+      bottom: -167px;
+    }
+
+    .triangle {
+      transform: rotate(270deg);
+    }
+  }
+
+  &-4 {
+    bottom: 0;
+    right: 0;
+
+    .flower {
+      bottom: -130px;
+      right: -180px;
+    }
+
+    .triangle {
+      transform: rotate(180deg);
+    }
+  }
+
+  @include bp-desktop() {
+    .flower {
+      opacity: 0.1;
+    }
+
+    .triangle {
+      display: none;
+    }
+  }
+}

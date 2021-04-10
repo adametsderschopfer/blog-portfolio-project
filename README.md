@@ -1,1 +1,1 @@
-# own-portfolio-project
+# blog-portfolio-project

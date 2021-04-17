@@ -20,21 +20,92 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:project-html-version" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b193f62-4b63-471e-a9f1-6ee2f5407004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project-html/src/js/legancy/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-html/src/sass/blocks/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-html/src/templates/pages/contacts.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-html/src/templates/pages/post.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-html/src/templates/pages/posts.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-html/src/templates/template-parts/angle-flower.twig" afterDir="false" />
+    <list default="true" id="1b193f62-4b63-471e-a9f1-6ee2f5407004" name="Default Changelist" comment="" />
+    <list id="34b6a9be-07c6-4352-aa16-382c044c1c05" name="chore: build" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/DTOs/post/create-post.dto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/DTOs/post/create-post.dto.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/controllers/admin/Admin.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/controllers/admin/Admin.controller.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/entity/Menu.entity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/entity/Menu.entity.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/entity/Post.entity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/entity/Post.entity.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/interfaces/provides/IncludeComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/interfaces/provides/IncludeComponent.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/middlewares/AuthAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/middlewares/AuthAdmin.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/providers/Include.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/providers/Include.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/providers/IncludeComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/providers/IncludeComponent.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/sevices/LastPosts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/sevices/LastPosts.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/template_styles.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/build.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vendor/ptr.min.js" afterDir="false" />
+    </list>
+    <list id="c53ca81b-94af-4b28-a68f-12fd481b8cc6" name="feet: update prj" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTOs/post/create-post.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/admin/Admin.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Post.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/provides/IncludeComponent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middlewares/AuthAdmin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/IncludeComponent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sevices/LastPosts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/add-post.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/edit-post.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/posts.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layout/admin.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/menu.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-html/src/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/project-html/src/sass/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-html/src/templates/template-parts/website-footer.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/Home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/Home.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/Home.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/Home.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/Posts.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/Posts.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/Posts.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/Posts.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/Log.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/middlewares/Log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/Log.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/middlewares/Log.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/providers/AppStartMultithreading.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/AppStartMultithreading.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/providers/Locals.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Locals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/providers/Locals.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Locals.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/providers/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/providers/Routes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/providers/Routes.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/web.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/routes/web.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/web.routes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/routes/web.routes.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/webAdmin.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/routes/webAdmin.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/webAdmin.routes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/routes/webAdmin.routes.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-html/src/portfolio.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-html/src/templates/pages/portfolio.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/About.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Home.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Home.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Post.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Posts.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Posts.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/Log.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/Log.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/AppStartMultithreading.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/AppStartMultithreading.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/Locals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/Locals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/Routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/Routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/webAdmin.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/webAdmin.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/about.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/main.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/post.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/post.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/posts.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/posts.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/endBody.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/endBody.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/head.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +115,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="project-html-version" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,11 +143,16 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1b193f62-4b63-471e-a9f1-6ee2f5407004" name="Default Changelist" comment="" />
+      <changelist id="34b6a9be-07c6-4352-aa16-382c044c1c05" name="chore: build" comment="" />
+      <changelist id="c53ca81b-94af-4b28-a68f-12fd481b8cc6" name="feet: update prj" comment="" />
       <created>1617655329652</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617655329652</updated>
       <workItem from="1617655333266" duration="13089000" />
+      <workItem from="1618098956711" duration="49000" />
+      <workItem from="1618262218030" duration="242000" />
+      <workItem from="1618348425449" duration="36286000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init project">
       <created>1617661101020</created>
@@ -106,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617745683314</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feet: update prj">
+      <created>1618693908034</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618693908034</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: build">
+      <created>1618694147083</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618694147083</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +213,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="project-html-version" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -140,7 +230,9 @@
     <MESSAGE value="feet: add database locals, setting database connection" />
     <MESSAGE value="feet: add view engine and create empty files" />
     <MESSAGE value="chore: clone builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: clone builder" />
+    <MESSAGE value="chore: build" />
+    <MESSAGE value="feet: update prj" />
+    <option name="LAST_COMMIT_MESSAGE" value="feet: update prj" />
   </component>
   <component name="WindowStateProjectService">
     <state x="750" y="359" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617743290789">
@@ -167,6 +259,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="746" y="258" key="RollbackChangesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1617655950109" />
+    <state x="811" y="471" key="VCS.ChangelistChooser" timestamp="1618694161757">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="811" y="471" key="VCS.ChangelistChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1618694161757" />
     <state x="552" y="288" key="Vcs.Push.Dialog.v2" timestamp="1617745709784">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

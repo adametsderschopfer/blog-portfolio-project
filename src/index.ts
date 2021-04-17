@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 import * as express from "express";
 import {Application} from "express";
 import * as compression from 'compression';
@@ -12,6 +14,10 @@ import {AppStartMultithreading} from "./providers/AppStartMultithreading";
 import Log from "./middlewares/Log";
 import CORS from "./middlewares/CORS";
 import Mount from "./utils/mount";
+import LastPosts from "./sevices/LastPosts";
+import {IncludeComponent} from "./providers/IncludeComponent";
+
+export const app: Application = express();
 
 function initApplication(_app: Application): Promise<void> {
 	Log.info('[Application] :: Start init.');
@@ -33,19 +39,20 @@ function initApplication(_app: Application): Promise<void> {
 
 function bootstrap(): void {
 	Log.info('[Application] :: Booting Application...')
-	const app: Application = express();
 
 	initApplication(app)
 		.then(() => {
 			Log.info('[Application] :: Finish init.');
 
+			new IncludeComponent(LastPosts, app);
 			Routes.mount(app)
 
 			app.listen(app.locals._config.port, () => {
 				Log.info('[Application] :: Server was started. PORT: ' + app.locals._config.port);
 			});
-		}, err => {
-			Log.error('[Application] :: app was crashed. process exit with 0 code. Error reason: ' + JSON.stringify(err))
+		},
+			err => {
+			Log.error('[Application] :: app was crashed. process exit with 0 code. Error reason: ' + JSON.stringify(err));
 		})
 		.finally(() => {
 			Log.info('===============================================================');

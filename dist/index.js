@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.app = void 0;
+require("reflect-metadata");
 const express = require("express");
 const compression = require("compression");
 const bodyParser = require("body-parser");
@@ -12,6 +14,9 @@ const AppStartMultithreading_1 = require("./providers/AppStartMultithreading");
 const Log_1 = require("./middlewares/Log");
 const CORS_1 = require("./middlewares/CORS");
 const mount_1 = require("./utils/mount");
+const LastPosts_1 = require("./sevices/LastPosts");
+const IncludeComponent_1 = require("./providers/IncludeComponent");
+exports.app = express();
 function initApplication(_app) {
     Log_1.default.info('[Application] :: Start init.');
     const mountMiddleware = mount_1.default.init(_app);
@@ -28,13 +33,13 @@ function initApplication(_app) {
 }
 function bootstrap() {
     Log_1.default.info('[Application] :: Booting Application...');
-    const app = express();
-    initApplication(app)
+    initApplication(exports.app)
         .then(() => {
         Log_1.default.info('[Application] :: Finish init.');
-        Routes_1.default.mount(app);
-        app.listen(app.locals._config.port, () => {
-            Log_1.default.info('[Application] :: Server was started. PORT: ' + app.locals._config.port);
+        new IncludeComponent_1.IncludeComponent(LastPosts_1.default, exports.app);
+        Routes_1.default.mount(exports.app);
+        exports.app.listen(exports.app.locals._config.port, () => {
+            Log_1.default.info('[Application] :: Server was started. PORT: ' + exports.app.locals._config.port);
         });
     }, err => {
         Log_1.default.error('[Application] :: app was crashed. process exit with 0 code. Error reason: ' + JSON.stringify(err));

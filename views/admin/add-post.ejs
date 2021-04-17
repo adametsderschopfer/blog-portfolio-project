@@ -1,0 +1,22 @@
+<%-layout('../layout/admin') %>
+<%
+block('SECTION_TITLE', 'Создать новый пост')
+
+var $SESSION_KEY = Date.now();
+%>
+
+<form action="/admin/posts/new" method="post">
+    <div class="input-group input-group-md mb-3 mt-3">
+        <input type="text" aria-label="Title" placeholder="Title" name="title" class="form-control">
+    </div>
+
+    <div class="form-floating mt-3 mb-3">
+        <textarea class="form-control" name="description" placeholder="description" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Comments</label>
+    </div>
+
+    <textarea name="content" class="js-area-niceEditor"></textarea>
+
+    <button class="btn btn-primary mt-3 mb-3" type="submit">Создать</button>
+</form>
+

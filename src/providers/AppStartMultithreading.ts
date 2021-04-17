@@ -3,9 +3,9 @@ import * as cluster from 'cluster';
 import Log from "../middlewares/Log";
 
 export class AppStartMultithreading {
-    private static cores = os.cpus().length;
+    private static cores: number = os.cpus().length;
 
-    public static listen(_bootstrap: () => void) {
+    public static listen(_bootstrap: () => void): void {
         Log.info('===============================================================');
 
         if (cluster.isMaster) {

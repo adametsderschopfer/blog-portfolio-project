@@ -5,6 +5,7 @@
   "main": "dist",
   "scripts": {
     "build": "tsc --project ./tsconfig.json",
+    "start": "node ./dist/index.js",
     "dev": "concurrently \"tsc --project ./tsconfig.json --watch\" \"cross-env NODE_ENV=development nodemon dist\"",
     "test": "tsc --project ./tsconfig.json && ./node_modules/.bin/mocha dist/**/*.spec.js",
     "lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/**.ts'"

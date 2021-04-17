@@ -13,7 +13,9 @@ class Log {
     }
     // Adds INFO prefix string to the log string
     info(_string) {
-        this.addLog('INFO', _string);
+        if (process.env.NODE_ENV === 'development')
+            console.log(_string);
+        this.addLog(`INFO {${process.pid}`, _string);
     }
     // Adds WARN prefix string to the log string
     warn(_string) {

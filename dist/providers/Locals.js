@@ -12,6 +12,10 @@ class Locals {
         dotenv.config({ path: path.join(__dirname, '../../.env') });
         const url = process.env.APP_URL || `http://localhost:${process.env.PORT}`;
         const port = process.env.PORT || 4040;
+        const adminAuth = {
+            login: process.env.adminLogin || 'admin',
+            password: process.env.adminPassword || 'admin',
+        };
         const apiVersion = process.env.apiVersion;
         const databaseConnectionOptions = {
             "type": "mysql",
@@ -22,7 +26,7 @@ class Locals {
             "database": "blog-portfolio",
             "synchronize": true,
             "entities": [
-                "dist/entity/*.js"
+                "dist/**/*.entity.js"
             ],
             "migrations": [
                 "dist/migration/*.js"
@@ -32,7 +36,8 @@ class Locals {
             port,
             url,
             databaseConnectionOptions,
-            apiVersion
+            apiVersion,
+            adminAuth
         };
     }
     /**
@@ -41,6 +46,7 @@ class Locals {
     static init(_express) {
         Log_1.default.info('[Locals] :: Initialized locals and injects to express.locals');
         _express.locals._config = this.config();
+        _express.locals.lastDeveloperPosts = [];
         return _express;
     }
 }
